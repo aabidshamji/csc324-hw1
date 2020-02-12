@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Myapp</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+<head>
+  <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+  <ul>
+    <li><%= link_to("Home", {:controller => 'static_pages', :action => 'home'}) %></li>
+    <li><%= link_to("About", {:controller => 'static_pages', :action => 'about'}) %></li>
+    <li><%= link_to("Help", {:controller => 'static_pages', :action => 'help'}) %></li>
+  </ul>
+  <%= stylesheet_link_tag    'application', media: 'all',
+                             'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= yield %>
+</body>
 </html>
