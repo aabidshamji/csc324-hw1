@@ -1,3 +1,17 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@charset "UTF-8";
+/* CSS Document */
+body {
+  font-family: Verdana, sans-serif;
+  color: #242626;
+}
+
+h1, h2, h3 {
+  font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+h1 {
+  color: darkred;
+}
