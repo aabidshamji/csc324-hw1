@@ -8,10 +8,34 @@ body {
   color: #242626;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
 
 h1 {
+  color: darkred;
+}
+
+h4 {
+  color: white; font-size: large;
+}
+
+b:link {
+  text-decoration: none;
+  color: #242626;
+}
+
+b:visited {
+  text-decoration: none;
+  color: #242626;
+}
+
+b:hover {
+  text-decoration: none;
+  color: darkred;
+}
+
+b:active {
+  text-decoration: underline;
   color: darkred;
 }
